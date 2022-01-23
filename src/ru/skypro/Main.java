@@ -13,6 +13,10 @@ public class Main {
 
         operatingSystem(2022, 0);
 
+        //Задание №3
+
+        deliveryTime(19);
+
     }
 
     public static int visocos(int year) {
@@ -60,6 +64,25 @@ public class Main {
         }
 
 
+    }
+
+   public static int deliveryTime(int deliveryDistance){
+       //int deliveryDistance = 95;
+       int day = 0;
+       if (deliveryDistance <= 20) {
+           day = 1;
+           System.out.println("Потребуется дней: " + day);
+
+       }else if (deliveryDistance >20 &&deliveryDistance <60) {
+           day = 2;
+           System.out.println("Потребуется дней: " + day);
+
+       }else if (deliveryDistance >=60 &&deliveryDistance <100) {
+           day = 3;
+           System.out.println("Потребуется дней: " + day);
+
+       }
+       return day;
     }
 
 }

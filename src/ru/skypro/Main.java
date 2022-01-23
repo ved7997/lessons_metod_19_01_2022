@@ -2,7 +2,10 @@ package ru.skypro;
 
 import java.time.LocalDate;
 
+//import static jdk.internal.org.jline.utils.Colors.s;
+
 public class Main {
+
 
     public static void main(String[] args) {
         //Задание №1
@@ -16,6 +19,13 @@ public class Main {
         //Задание №3
 
         deliveryTime(19);
+        //Задание 4
+
+        //Задание 5
+         char[] reverseFull = new char[] {1, 2, 3, 4, 5, 6} ;
+
+         reversString(reverseFull);
+
 
     }
 
@@ -44,13 +54,11 @@ public class Main {
 
             } else if (clientOS == 0) {
 
-               System.out.println(stro2);
+                System.out.println(stro2);
 
             }
 
-        }
-
-        else if (clientDeviceYear < currentYear) {
+        } else if (clientDeviceYear < currentYear) {
 
             if (clientOS == 1) {
                 System.out.println(stro4);
@@ -66,23 +74,34 @@ public class Main {
 
     }
 
-   public static int deliveryTime(int deliveryDistance){
-       //int deliveryDistance = 95;
-       int day = 0;
-       if (deliveryDistance <= 20) {
-           day = 1;
-           System.out.println("Потребуется дней: " + day);
 
-       }else if (deliveryDistance >20 &&deliveryDistance <60) {
-           day = 2;
-           System.out.println("Потребуется дней: " + day);
+    public static int deliveryTime(int deliveryDistance) {
+        //int deliveryDistance = 95;
+        int day = 0;
+        if (deliveryDistance <= 20) {
+            day = 1;
+            System.out.println("Потребуется дней: " + day);
 
-       }else if (deliveryDistance >=60 &&deliveryDistance <100) {
-           day = 3;
-           System.out.println("Потребуется дней: " + day);
+        } else if (deliveryDistance > 20 && deliveryDistance < 60) {
+            day = 2;
+            System.out.println("Потребуется дней: " + day);
 
-       }
-       return day;
+        } else if (deliveryDistance >= 60 && deliveryDistance < 100) {
+            day = 3;
+            System.out.println("Потребуется дней: " + day);
+
+        }
+        return day;
+    }
+    public static void reversString(char[] reverseFull){
+
+        int i;
+
+        for (i = reverseFull.length - 1; i >= 0; i--) {
+
+            System.out.print(reverseFull[i]);
+        }
+
     }
 
 }

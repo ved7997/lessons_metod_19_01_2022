@@ -22,9 +22,9 @@ public class Main {
         //Задание 4
 
         //Задание 5
-         char[] reverseFull = new char[] {'3', '2', '1', '6', '5'} ;
+        // char[] reverseFull = new char[] {'3', '2', '1', '6', '5'} ;
 
-         reversString(reverseFull);
+         reversString("32165");
 
 
     }
@@ -93,8 +93,8 @@ public class Main {
         }
         return day;
     }
-    public static void reversString(char[] reverseFull){
-
+    public static void reversString(String s){
+        char[] reverseFull = s.toCharArray();
         int i;
 
         for (i = reverseFull.length - 1; i >= 0; i--) {
@@ -103,6 +103,8 @@ public class Main {
         }
 
     }
+
+    //public static void sortStro
 
 }
 

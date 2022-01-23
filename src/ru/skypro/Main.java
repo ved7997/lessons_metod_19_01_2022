@@ -22,7 +22,7 @@ public class Main {
         //Задание 4
 
         //Задание 5
-         char[] reverseFull = new char[] {'1', '2', '3', '4', '5', '6'} ;
+         char[] reverseFull = new char[] {'3', '2', '1', '6', '5'} ;
 
          reversString(reverseFull);
 

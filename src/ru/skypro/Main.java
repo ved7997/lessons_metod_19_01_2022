@@ -11,32 +11,8 @@ public class Main {
 
         //Задание №2
 
-        operatingSystem(2002, 1);
-//        int clientOS = 0;
-//        int clientDeviceYear = 2021;
-//        int currentYear = LocalDate.now().getYear();
-//        if (clientDeviceYear == currentYear) {
-//
-//            if (clientOS == 1) {
-//                System.out.println("Установите версию приложения для Android по ссылке");
-//
-//            } else if (clientOS == 0) {
-//                System.out.println("Установите версию приложения для iOS по ссылке");
-//
-//            }
-//
-//        }
-//        String ios = "Установите облегченную версию приложения для iOS по ссылке";
-//        String android = "Установите облегченную версию приложения для Android по ссылке";
-//
-//        if (clientDeviceYear < currentYear) {
-//
-//            if (clientOS == 1) {
-//                System.out.println(android);
-//            } else if (clientOS == 0) {
-//                System.out.println(ios);
-//            }
-//        }
+        operatingSystem(2022, 0);
+
     }
 
     public static int visocos(int year) {
@@ -50,67 +26,47 @@ public class Main {
     }
 
 
-    public static String operatingSystem(int clientDeviceYear, int clientOS) {
+    public static void operatingSystem(int clientDeviceYear, int clientOS) {
 
-
-        //int clientOS = ;
-        //int clientDeviceYear = 2021;
-        String stro7;
         String stro1 = "Установите версию приложения для Android по ссылке";
         String stro2 = "Установите версию приложения для iOS по ссылке";
-        String stro3 = "Установите облегченную версию приложения для iOS по ссылке";;
-        String stro4 = "Установите облегченную версию приложения для Android по ссылке";;
-        //System.out.println(stro7);
+        String stro3 = "Установите облегченную версию приложения для iOS по ссылке";
+        String stro4 = "Установите облегченную версию приложения для Android по ссылке";
 
         int currentYear = LocalDate.now().getYear();
         if (clientDeviceYear == currentYear) {
-
             if (clientOS == 1) {
-                //String stro1 = "Установите версию приложения для Android по ссылке";
-                stro7 = stro1;
-                System.out.println(stro7);
-                return stro7;
-
-                //System.out.println(stro1);
+                System.out.println(stro1);
 
             } else if (clientOS == 0) {
-                //String stro2 = "Установите версию приложения для iOS по ссылке";
-//                System.out.println(stro2);
-//                return stro2;
-                stro7 = stro2;
-                System.out.println(stro7);
-                return stro7;
+
+               System.out.println(stro2);
+
             }
 
         }
-//        String ios = "Установите облегченную версию приложения для iOS по ссылке";
-//        String android = "Установите облегченную версию приложения для Android по ссылке";
 
-        if (clientDeviceYear < currentYear) {
+        else if (clientDeviceYear < currentYear) {
 
             if (clientOS == 1) {
-                stro7 = stro3;
-                System.out.println(stro7);
-                return stro7;
+                System.out.println(stro4);
 
             } else if (clientOS == 0) {
-               // System.out.println(ios);
-                stro7 = stro4;
-                System.out.println(stro7);
-
+                System.out.println(stro3);
 
             }
 
 
         }
-
-
-
-
 
 
     }
 
-
-
 }
+
+
+
+
+
+
+

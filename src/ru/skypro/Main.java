@@ -20,9 +20,10 @@ public class Main {
 
         deliveryTime(19);
         //Задание 4
+       sortStro ("aabccddefgghiijjkk");
 
         //Задание 5
-        // char[] reverseFull = new char[] {'3', '2', '1', '6', '5'} ;
+
 
          reversString("32165");
 
@@ -104,7 +105,18 @@ public class Main {
 
     }
 
-    //public static void sortStro
+    public static void sortStro(String st) {
+        char[] sortChar = st.toCharArray();
+        char rezult = ' ';
+        for (int i = 0; i < sortChar.length; i++) {
+
+            if (sortChar[i] == rezult) {
+                System.out.println("Присутствует дубль " + sortChar[i]);
+                break;
+            }
+            rezult = sortChar[i];
+        }
+    }
 
 }
 

@@ -25,7 +25,7 @@ public class Main {
         //Задание 5
 
 
-         reversString("32165");
+         reverseArray("32165");
 
 
     }
@@ -89,14 +89,15 @@ public class Main {
         }
         return day;
     }
-    public static void reversString(String s){
-        char[] reverseFull = s.toCharArray();
-        int i;
+    public static void reverseArray(String s){
+
+      char[] reverseFull = s.toCharArray();
+      int i;
 
         for (i = reverseFull.length - 1; i >= 0; i--) {
 
             System.out.print(reverseFull[i]);
-        }
+       }
 
     }
 

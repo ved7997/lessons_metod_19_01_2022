@@ -10,7 +10,7 @@ public class Main {
     public static void main(String[] args) {
         //Задание №1
 
-        visocos(1980);
+        visocos(2000);
 
         //Задание №2
 
@@ -31,13 +31,14 @@ public class Main {
     }
 
     public static int visocos(int year) {
-        if (year % 4 == 0 || year % 100 == 0 || year % 400 == 0) {
-            System.out.println(year + " год является високосным ");
+        if ( year % 400 == 0 || year % 4 == 0 && year % 100 != 0 ) {
+            System.out.println(year + " год  является високосным ");
             return year;
-        } else {
+        }else  {
             System.out.println(year + " год не является високосным ");
-            return year;
+
         }
+        return year;
     }
 
 
@@ -66,15 +67,9 @@ public class Main {
 
             } else if (clientOS == 0) {
                 System.out.println(stro3);
-
             }
-
-
         }
-
-
     }
-
 
     public static int deliveryTime(int deliveryDistance) {
         //int deliveryDistance = 95;

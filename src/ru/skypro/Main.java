@@ -1,6 +1,7 @@
 package ru.skypro;
 
 import java.time.LocalDate;
+import java.util.Arrays;
 
 //import static jdk.internal.org.jline.utils.Colors.s;
 
@@ -23,9 +24,9 @@ public class Main {
        sortStro ("aabccddefgghiijjkk");
 
         //Задание 5
-
-
-         reverseArray("32165");
+        int[] arr = {'3', '2', '1', '5', '6' };
+        reverseArray(arr);
+       // System.out.println(Arrays.toString(arr));
 
 
     }
@@ -89,20 +90,29 @@ public class Main {
         }
         return day;
     }
-    public static void reverseArray(String s){
+    public static void reverseArray(int[] arr){
 
-      char[] reverseFull = s.toCharArray();
-      int i;
+      int leftIndex = 0;
+      int rightIndex = arr.length - 1;
 
-        for (i = reverseFull.length - 1; i >= 0; i--) {
+        while (leftIndex < rightIndex) {
 
-            System.out.print(reverseFull[i]);
+            int temp = arr[leftIndex];
+            arr[leftIndex] = arr[rightIndex];
+            arr[rightIndex] = temp;
+
+            leftIndex++;
+            rightIndex--;
+
        }
+        for (int i = 0; i < arr.length - 1; i++) {
+            System.out.print(arr[i] + " ");
+        }
 
     }
 
-    public static void sortStro(String st) {
-        char[] sortChar = st.toCharArray();
+    public static void sortStro(String s) {
+        char[] sortChar = s.toCharArray();
         char rezult = ' ';
         for (int i = 0; i < sortChar.length; i++) {
 
